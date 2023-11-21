@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Facebook">
+	
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
+	
+	
+  	  <parameter name="url" value="http://live.techpanda.org/" />
+  	  
+  	  <test name = "Run on FIREFOX">
+			<parameter name="browser" value="firefox" />
+    	<classes>
+      <class name="liveGuru.Level_01_LiveGuru_Register" />
+    </classes>
+  </test> 
+</suite> 

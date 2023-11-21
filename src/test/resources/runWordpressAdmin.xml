@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Wordpress - Admin">
+	
+	
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+<!--		<listener class-name="reportConfig.ExtentTestListener" />-->
+<!--		<listener class-name="reportConfig.AllureTestListener" />-->
+	</listeners>  
+
+	<parameter name="urlAdmin" value="http://localhost:8000/web/wp-admin"/>
+	<parameter name="urlUser" value="http://localhost:8000/web/" />
+
+	<test name="Run on FIREFOX">
+		<parameter	name = "browser" value = "firefox" /> 
+		 	<classes>
+	  <class name="com.wordpress.user.Post_01_Create_Read_Update_Delete_Search" />
+    </classes>
+    
+<!--    <packages>-->
+<!--		<package name="pageObjects.wordpress.admin" />-->
+<!--	</packages>-->
+  </test> 
+   
+  
+</suite> 

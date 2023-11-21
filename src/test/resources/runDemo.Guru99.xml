@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Facebook">
+	
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
+	
+	
+  	  <parameter name="url" value="https://demo.guru99.com/v4/" />
+  	  
+  	  <test name = "Run on FIREFOX">
+			<parameter name="browser" value="firefox" />
+    	<classes>
+      <class name="demoGuru99.TC_01_New_Customer" />
+    </classes>
+  </test> 
+</suite> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Facebook">
+	
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
+	
+	
+  	  <parameter name="url" value="http://192.168.0.108:8000/auth/login" />
+  	  
+  	  <test name = "Run on FIREFOX">
+			<parameter name="browser" value="firefox" />
+    	<classes>
+      <class name="com.safety.admin.TC_Add_DisasterInfo" />
+    </classes>
+  </test> 
+</suite> 
